@@ -1,0 +1,127 @@
+{{> header }}
+<div class="container-wrapper">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+                Contact
+            </li>
+        </ol>
+    </nav>
+</div>
+<section class="contact-page">
+    <div class="container-wrapper">
+        <h1>
+            Vous avez des questions à proposer ? Envoyez-nous un message.
+        </h1>
+        <div class="d-flex">
+            <div class="left-side">
+                <form class="row needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputNom" placeholder="Nom" required>
+                        <div class="valid-feedback">
+                            valide
+                        </div>
+                        <div class="invalid-feedback">
+                            Ajouter votre nom
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom" required>
+                        <div class="valid-feedback">
+                            valide
+                        </div>
+                        <div class="invalid-feedback">
+                            Ajouter votre prénom
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" id="inputTelephone" placeholder="Téléphone" required>
+                        <div class="valid-feedback">
+                            valide
+                        </div>
+                        <div class="invalid-feedback">
+                            Ajouter votre numéro de téléphone
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        <div class="valid-feedback">
+                            valide
+                        </div>
+                        <div class="invalid-feedback">
+                            Ajouter votre E-mail
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" name="Sujet" class="form-control" id="sujet" placeholder="Sujet" required>
+                        <div class="valid-feedback">
+                            valide
+                        </div>
+                        <div class="invalid-feedback">
+                            Ajouter un sujet
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" required></textarea>
+                        <div class="valid-feedback">
+                            valide
+                        </div>
+                        <div class="invalid-feedback">
+                            Ajouter un text
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn bg-blue">Envoyez</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right-side">
+                <div>
+                    <h2>
+                        Nos coordonnées
+                    </h2>
+                    <ul>
+                        <li class="d-flex align-items-center">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+216 75 000 000">+216 75 000 000</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:sdacademy@gmail.com">sdacademy@gmail.com</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Route Tataouin, Médenine, Tunisie</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>
+                        Suivez nos réseaux sociaux
+                    </h2>
+                    <div class="d-flex our-social-media">
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{> footer}}

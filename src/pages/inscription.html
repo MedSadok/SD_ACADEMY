@@ -1,0 +1,484 @@
+<section class="inscription">
+    <div class="container-wrapper">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                    <a href="/">Retour à la page d'accueil</a>
+                </li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <h1>
+                    Bienvenue dans le plateforme SD ACADEMY.
+                </h1>
+                <p>
+                    -Vous souhaitez inscrire votre enfant à l'académie ? Sélectionnez le choix <span>Parent+élève</span> et remplir le formulaire afin de nous rejoindre et obtenir votre calendrier d'études. Vous devez ensuite choisir entre cours complet
+                    ou bien cours d'études.
+                </p>
+                <p>
+                    -Vous souhaitez donner des cours au élèves ? Sélectionnez le choix <span>Professeur</span> et remplir le formulaire afin de nous rejoindre et commencer à étudier les élèves participants.
+                </p>
+            </div>
+            <div class="col-md-7 col-12">
+                <div class="card">
+                    <form id="professor-student">
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <h2>
+                            Vous êtes ?
+                        </h2>
+                        <div class="d-flex">
+                            <div class="button">
+                                <button class="btn outline-btn bg-blue to-professor-information">
+                                   Professeur
+                               </button>
+                            </div>
+                            <div class="button">
+                                <button class="btn outline-btn bg-blue to-student-information">
+                                     Parent+élève
+                                 </button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="informations-student-parent" class="needs-validation" novalidate>
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <p>Veuillez remplier les champs ci-dessous:</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputNom" placeholder="Nom" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre nom
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre prénom
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputNiveau" placeholder="Niveau scolaire" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre niveau
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputParentNomPrenom" placeholder="Nom et prénom du parent" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre prénom
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre E-mail
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputAdresse" placeholder="Adresse courriel" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre adresse maison
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Entrez votre mot de passe" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Entrez votre mot de passe
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmez votre mot de passe" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Re-entrez votre mot de passe exacte
+                                </div>
+                            </div>
+                            <div class="button col-12">
+                                <button type="submit" class="btn bg-yellow signup-student">S'inscrire</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="informations-professor" class="needs-validation" novalidate>
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <p>Veuillez remplier les champs ci-dessous:</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputNom" placeholder="Nom" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre nom
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputPrenom" placeholder="Prénom" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre prénom
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" id="inputTelephone" placeholder="Téléphone" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre numéro de téléphone
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre E-mail
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="inputAdresse" placeholder="Adresse courriel" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre adresse courriel
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="Profession" class="form-control" id="inputProfession" placeholder="Profession" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Ajouter votre Profession
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Entrez votre mot de passe" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Entrez votre mot de passe
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmez votre mot de passe" required>
+                                <div class="valid-feedback">
+                                    valide
+                                </div>
+                                <div class="invalid-feedback">
+                                    Re-entrez votre mot de passe exacte
+                                </div>
+                            </div>
+                            <div class="button col-12">
+                                <button type="submit" class="btn bg-yellow signup-professor">S'inscrire</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="cours-type">
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <h2>
+                            Vous devez sélectionner :
+                        </h2>
+                        <div class="d-flex">
+                            <div class="button">
+                                <button class="btn outline-btn bg-blue to-choix-cours">
+                                Cours complet
+                            </button>
+                            </div>
+                            <div class="button">
+                                <button class="btn outline-btn bg-blue to-choix-cours">
+                                Cours d'études
+                            </button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="choix-cours-student">
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <p>Veuillez sélectionnez les cours à étudier sur SD ACADEMY :</p>
+                        <div class="row">
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                15DT / mois
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn bg-yellow to-confirmation">Suivant</button>
+                        </div>
+                    </form>
+                    <form id="choix-cours-professor">
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <p>Veuillez sélectionnez les cours à étudier sur SD ACADEMY :</p>
+                        <div class="row">
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <div class="card">
+                                        <div class="card-top">
+                                            <img src="../assets/images/profile/sigmund-EgwhIBec0Ck-unsplash.jpg" alt="" class="card-img-top">
+                                            <h3>Titre de cours</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn bg-yellow to-success-registration">Suivant</button>
+                        </div>
+                    </form>
+                    <form id="confirmation">
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <h2>
+                            Votre somme totale à payer est :
+                        </h2>
+                        <h3>
+                            45DT/Mois
+                        </h3>
+                        <div class="button d-flex justify-content-center">
+                            <button class="btn outline-btn bg-yellow retour">Retour à la sélection</button>
+                            <button type="submit" class="btn outline-btn bg-yellow confirm">Confirmer</button>
+                        </div>
+                    </form>
+                    <div class="success-registration">
+                        <img src="../assets/images/Logo.svg" alt="">
+                        <h2>
+                            On vous remercie de rejoindre SD ACADEMY.
+                        </h2>
+                        <img src="../assets/images/Photos-SVGs/Svgs/Inscription/undraw_mail_sent_re_0ofv.svg" alt="">
+                        <h2>
+                            Votre compte a été crée avec succès. Un email sera envoyé avec le lien d'activation de votre compte.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
